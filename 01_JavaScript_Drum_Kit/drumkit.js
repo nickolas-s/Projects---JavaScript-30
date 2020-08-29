@@ -1,6 +1,8 @@
-function playsound(e) {
-  const audio = document.querySelector(`audio[data-key=${e.code}]`);
-  const key = document.querySelector(`.key[data-key=${e.code}]`);
+const keys = document.querySelectorAll('.key');
+
+function playsound(code) {
+  const audio = document.querySelector(`audio[data-key=${code}]`);
+  const key = document.querySelector(`.key[data-key=${code}]`);
 
   if (!audio) return;
   audio.currentTime = 0;
@@ -13,4 +15,14 @@ function playsound(e) {
   };
 }
 
-window.addEventListener('keydown', playsound);
+window.addEventListener('keydown', e => {
+  const keyCode = e.code;
+  playsound(keyCode);
+});
+
+keys.forEach(key =>
+  key.addEventListener('click', function(e) {
+    const keyCode = e.currentTarget.dataset.key;
+    playsound(keyCode);
+  })
+);
