@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Array Cardio Day 1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.scss" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Array Cardio Day One 💪</h1>
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+            target="_blank"
+            >Array.prototype.map()</a
+          >
+          - Returns a new array containing the results of calling a function on
+          every element in this array.
+        </p>
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+            target="_blank"
+            >Array.prototype.filter()</a
+          >
+          - Returns a new array containing all elements of the calling array for
+          which the provided filtering function returns true.
+        </p>
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+            target="_blank"
+            >Array.prototype.reduce()</a
+          >
+          - Apply a function against an accumulator and each value of the array
+          (from left-to-right) as to reduce it to a single value.
+        </p>
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+            target="_blank"
+            >Array.prototype.sort()</a
+          >
+          - Sorts the elements of an array in place and returns the array.
+        </p>
+
+        <div class="methods">
+          <img src="./images/array-methods.jpg" alt="methods" />
+        </div>
+      </header>
+
+      <section class="data">
+        <p>Some data we can work with:</p>
+        <div class="data-samples">
+          <img src="./images/inventors.png" alt="Inventors Array" />
+          <img src="./images/people.png" alt="People Array" />
+          <img src="./images/data.png" alt="Data Array" />
+        </div>
+      </section>
+
+      <div class="exercises">
+        <div class="exercise">
+          <h2>Exercise 01 - .filter()</h2>
+          <p>
+            Filter the list of inventors for those who were born in the 1500's
+          </p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise01-code.png" alt="Code Exercise 01" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise01-output.png"
+              alt="Output Exercise 01"
+            />
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h2>Exercise 02 - .map()</h2>
+          <p>Give us an array of the inventors first and last names</p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise02-code.png" alt="Code Exercise 02" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise02-output.png"
+              alt="Output Exercise 02"
+            />
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h2>Exercise 03 - .sort()</h2>
+          <p>Sort the inventors by birthdate, oldest to youngest</p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise03-code.png" alt="Code Exercise 03" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise03-output.png"
+              alt="Output Exercise 03"
+            />
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h2>Exercise 04 - .reduce()</h2>
+          <p>How many years did all the inventors live all together?</p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise04-code.png" alt="Code Exercise 04" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise04-output.png"
+              alt="Output Exercise 04"
+            />
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h2>Exercise 05 - .sort()</h2>
+          <p>Sort the inventors by years lived</p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise05-code.png" alt="Code Exercise 05" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise05-output.png"
+              alt="Output Exercise 05"
+            />
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h2>Exercise 06 - .map() & .filter()</h2>
+          <p>
+            Create a list of Boulevards in Paris that contain 'de' anywhere in
+            the name from
+            <em
+              ><a
+                href="https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris"
+                target="_blank"
+                >this wikipedia page</a
+              ></em
+            >
+          </p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise06-code.png" alt="Code Exercise 06" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise06-output.png"
+              alt="Output Exercise 06"
+            />
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h2>Exercise 07 - .sort()</h2>
+          <p>Sort the people alphabetically by last name</p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise07-code.png" alt="Code Exercise 07" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise07-output.png"
+              alt="Output Exercise 07"
+            />
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h2>Exercise 08 - .reduce()</h2>
+          <p>Sum up the instances of each item on the data array</p>
+          <div class="code">
+            <p>Code</p>
+            <img src="./images/exercise08-code.png" alt="Code Exercise 08" />
+          </div>
+          <div class="output">
+            <p>Output</p>
+            <img
+              src="./images/exercise08-output.png"
+              alt="Output Exercise 08"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./arrayCardio1.js"></script>
+  </body>
+</html>

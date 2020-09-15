@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Console Tricks!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.scss" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Console Tricks! 🛠️</h1>
+        <p><em>Psst: have a look at the JavaScript Console</em> 👀</p>
+      </header>
+
+      <main>
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/log"
+            target="_blank"
+            >console.log()</a
+          >
+          - The Console method log() outputs a message to the web console. The
+          message may be a single string (with optional substitution values), or
+          it may be any one or more JavaScript objects.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/console.log().png" alt="console.log()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/console"
+            target="_blank"
+            >Using string substitutions</a
+          >
+          - When passing a string to one of the console object's methods that
+          accepts a string (such as log()), you may use %s to substitute a
+          string. Template literals can also be used for interpolation.
+        </p>
+
+        <div class="image-container">
+          <img
+            src="./images/interpolated.png"
+            alt="Using string substitutions"
+          />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/console"
+            target="_blank"
+            >Styling console output</a
+          >
+          - You can use the %c directive to apply a CSS style to console output.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/styled.png" alt="Styling console output" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/warn"
+            target="_blank"
+            >console.warn()</a
+          >
+          - Outputs a warning message to the Web Console.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/warn.png" alt="console.warn()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/error"
+            target="_blank"
+            >console.error()</a
+          >
+          - Outputs an error message to the Web Console.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/error.png" alt="console.error()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/info"
+            target="_blank"
+            >console.info()</a
+          >
+          - Outputs an informational message to the Web Console. In Firefox, a
+          small "i" icon is displayed next to these items in the Web Console's
+          log.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/info.png" alt="console.info()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/console/assert"
+            target="_blank"
+            >console.assert()</a
+          >
+          - The console.assert() method writes an error message to the console
+          if the assertion is false. If the assertion is true, nothing happens.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/assert.png" alt="console.assert()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/dir"
+            target="_blank"
+            >console.dir()</a
+          >
+          - Displays an interactive list of the properties of the specified
+          JavaScript object. The output is presented as a hierarchical listing
+          with disclosure triangles that let you see the contents of child
+          objects.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/dir.png" alt="console.dir()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/groupCollapsed"
+            target="_blank"
+            >console.groupCollapsed() / console.groupEnd()
+          </a>
+          - Creates a new inline group in the Web Console. Unlike
+          console.group(), however, the new group is created collapsed. The user
+          will need to use the disclosure button next to it to expand it,
+          revealing the entries created in the group.
+        </p>
+
+        <div class="image-container">
+          <img
+            src="./images/group.png"
+            alt="console.groupCollapsed() / console.groupEnd()"
+          />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/count"
+            target="_blank"
+            >console.count()</a
+          >
+          - Logs the number of times that this particular call to count() has
+          been called.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/count.png" alt="console.count()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/table"
+            target="_blank"
+            >console.table()</a
+          >
+          - Displays tabular data as a table.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/table.png" alt="console.table()" />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/time"
+            target="_blank"
+            >console.time() / console.timeEnd()</a
+          >
+          - Starts a timer you can use to track how long an operation takes.
+          When you call console.timeEnd() with the same name, the browser will
+          output the time, in milliseconds, that elapsed since the timer was
+          started.
+        </p>
+
+        <div class="image-container">
+          <img
+            src="./images/time.png"
+            alt="console.time() / console.timeEnd()"
+          />
+        </div>
+
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Console/clear"
+            target="_blank"
+            >console.clear()</a
+          >
+          - Clears the console if the environment allows it.
+        </p>
+
+        <div class="image-container">
+          <img src="./images/clear.png" alt="console.clear()" />
+        </div>
+      </main>
+    </div>
+    <script src="./devTools.js"></script>
+  </body>
+</html>

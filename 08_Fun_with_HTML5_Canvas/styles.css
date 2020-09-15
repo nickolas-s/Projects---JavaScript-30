@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: url(https://source.unsplash.com/wQLAGv4_OYs/1600x900) no-repeat
+    center/cover;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#draw {
+  border: 20px solid #be2313;
+  border-radius: 20px;
+  background-color: #00222c;
+}

@@ -1,0 +1,133 @@
+@import "config";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-color;
+  font-family: $font-stack;
+  line-height: 1.5rem;
+}
+
+.wrapper {
+  max-width: $website-width;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+header {
+  // text-align: center;
+
+  h1 {
+    color: $card-background;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  p {
+    color: $paragraph;
+
+    a {
+      color: $accent-color;
+      text-decoration: none;
+      position: relative;
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 3px;
+        background: $accent-color;
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        right: 0;
+        border-radius: 2px;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 150ms;
+      }
+
+      &:hover::before {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+.data {
+  margin-bottom: 20px;
+
+  p {
+    color: $paragraph;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .data-samples {
+    display: grid;
+    // RAM
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+
+    img {
+      width: 100%;
+      border-radius: 2px;
+      object-fit: contain;
+    }
+  }
+}
+
+.exercises {
+  display: grid;
+  // RAM
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+
+  .exercise {
+    background: $card-background;
+    border-radius: 2px;
+    padding: 10px;
+
+    h2 {
+      text-align: center;
+      color: $card-headline;
+    }
+
+    p {
+      padding: 10px 0;
+      color: $card-paragraph;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    img {
+      width: 100%;
+      border-radius: 2px;
+      object-fit: contain;
+    }
+
+    .code p,
+    .output p {
+      color: $card-tag-txt;
+      background: $card-tag-bg;
+      background: $card-tag-bg;
+      width: 100%;
+      text-align: center;
+      border-radius: 2px;
+      padding: 3px 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+}
