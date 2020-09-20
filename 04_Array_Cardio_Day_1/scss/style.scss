@@ -144,3 +144,15 @@ header {
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .data {
+    .data-samples {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .exercises {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f0e17;
+  font-family: "Dosis", sans-serif;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(300px, 600px);
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.box {
+  border: 5px solid #ffc600;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  color: #fffffe;
+  text-align: center;
+}
+
+.mobile {
+  display: none;
+  color: #fffffe;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  margin: 30px 0;
+}
+
+p,
+li {
+  color: #a7a9be;
+  font-size: 25px;
+}
+
+li {
+  margin-left: 25px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #a7a9be;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 440px) {
+  body {
+    letter-spacing: normal;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+  }
+}
