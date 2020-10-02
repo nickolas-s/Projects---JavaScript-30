@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+  background-size: cover;
+  min-height: 100vh;
+  margin: 20px;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+article.text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+img {
+  border: 2px solid #ffc600;
+  border-radius: 5px;
+  padding: 3px;
+  width: 100%;
+  max-width: 420px;
+  object-fit: contain;
+}
+
+#bands {
+  list-style: inside circle;
+  background: white;
+  padding: 0;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  min-width: 300px;
+  border: 5px solid #ffc600;
+  border-radius: 5px;
+  line-height: 2rem;
+}
+
+#bands li {
+  border-bottom: 1px solid #efefef;
+  padding-left: 10px;
+}
+
+#bands li:last-child {
+  border-bottom: 0;
+}

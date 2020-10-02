@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort Without Articles</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <article class="text">
+        <h1>Sorting Names Without Articles</h1>
+        <p>Sort the bands array alphabetically without the articles</p>
+        <img src="./images/bands-array.png" alt="bands array" />
+        <p>
+          First we need to strip the articles out of the names using a regular
+          expression:
+        </p>
+        <img src="./images/stip-function.png" alt="strip function" />
+        <p>
+          Apply the sort method on the bands array using the strip function:
+        </p>
+        <img src="./images/sort-method.png" alt="sort method" />
+      </article>
+
+      <article class="result">
+        <ul id="bands"></ul>
+      </article>
+    </div>
+
+    <script src="./sort.js"></script>
+  </body>
+</html>

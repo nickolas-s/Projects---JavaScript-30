@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos</title>
+  </head>
+  <body>
+    <h1>Tally String Times With Reduce</h1>
+
+    <ul class="videos">
+      <li data-time="5:43">
+        <img src="https://source.unsplash.com/random?sig=1" />
+        Video 1 <spam class="time"></spam>
+      </li>
+      <li data-time="2:33">
+        <img src="https://source.unsplash.com/random?sig=2" />
+        Video 2 <spam class="time"></spam>
+      </li>
+      <li data-time="3:45">
+        <img src="https://source.unsplash.com/random?sig=3" />
+        Video 3 <spam class="time"></spam>
+      </li>
+      <li data-time="0:47">
+        <img src="https://source.unsplash.com/random?sig=4" />
+        Video 4 <spam class="time"></spam>
+      </li>
+      <li data-time="5:21">
+        <img src="https://source.unsplash.com/random?sig=5" />
+        Video 5 <spam class="time"></spam>
+      </li>
+      <li data-time="6:56">
+        <img src="https://source.unsplash.com/random?sig=6" />
+        Video 6 <spam class="time"></spam>
+      </li>
+      <li data-time="3:46">
+        <img src="https://source.unsplash.com/random?sig=7" />
+        Video 7 <spam class="time"></spam>
+      </li>
+      <li data-time="5:25">
+        <img src="https://source.unsplash.com/random?sig=8" />
+        Video 8 <spam class="time"></spam>
+      </li>
+      <li data-time="3:14">
+        <img src="https://source.unsplash.com/random?sig=9" />
+        Video 9 <spam class="time"></spam>
+      </li>
+      <li data-time="3:31">
+        <img src="https://source.unsplash.com/random?sig=10" />
+        Video 10 <spam class="time"></spam>
+      </li>
+      <li data-time="5:59">
+        <img src="https://source.unsplash.com/random?sig=11" />
+        Video 11 <spam class="time"></spam>
+      </li>
+      <li data-time="3:07">
+        <img src="https://source.unsplash.com/random?sig=12" />
+        Video 12 <spam class="time"></spam>
+      </li>
+      <li data-time="11:29">
+        <img src="https://source.unsplash.com/random?sig=13" />
+        Video 13 <spam class="time"></spam>
+      </li>
+      <li data-time="8:57">
+        <img src="https://source.unsplash.com/random?sig=14" />
+        Video 14 <spam class="time"></spam>
+      </li>
+      <li data-time="5:49">
+        <img src="https://source.unsplash.com/random?sig=15" />
+        Video 15 <spam class="time"></spam>
+      </li>
+      <li data-time="5:52">
+        <img src="https://source.unsplash.com/random?sig=16" />
+        Video 16 <spam class="time"></spam>
+      </li>
+      <li data-time="5:50">
+        <img src="https://source.unsplash.com/random?sig17" />
+        Video 17 <spam class="time"></spam>
+      </li>
+      <li data-time="9:13">
+        <img src="https://source.unsplash.com/random?sig=18" />
+        Video 18 <spam class="time"></spam>
+      </li>
+      <li data-time="11:51">
+        <img src="https://source.unsplash.com/random?sig=19" />
+        Video 19 <spam class="time"></spam>
+      </li>
+      <li data-time="7:58">
+        <img src="https://source.unsplash.com/random?sig=20" />
+        Video 20 <spam class="time"></spam>
+      </li>
+      <li data-time="4:40">
+        <img src="https://source.unsplash.com/random?sig=21" />
+        Video 21 <spam class="time"></spam>
+      </li>
+      <li data-time="4:45">
+        <img src="https://source.unsplash.com/random?sig=22" />
+        Video 22 <spam class="time"></spam>
+      </li>
+      <li data-time="6:46">
+        <img src="https://source.unsplash.com/random?sig=23" />
+        Video 23 <spam class="time"></spam>
+      </li>
+      <li data-time="7:24">
+        <img src="https://source.unsplash.com/random?sig=24" />
+        Video 24 <spam class="time"></spam>
+      </li>
+      <li data-time="7:12">
+        <img src="https://source.unsplash.com/random?sig=25" />
+        Video 25 <spam class="time"></spam>
+      </li>
+      <li data-time="5:23">
+        <img src="https://source.unsplash.com/random?sig=26" />
+        Video 26 <spam class="time"></spam>
+      </li>
+      <li data-time="3:34">
+        <img src="https://source.unsplash.com/random?sig=27" />
+        Video 27 <spam class="time"></spam>
+      </li>
+      <li data-time="8:22">
+        <img src="https://source.unsplash.com/random?sig=28" />
+        Video 28 <spam class="time"></spam>
+      </li>
+      <li data-time="5:17">
+        <img src="https://source.unsplash.com/random?sig=280" />
+        Video 29 <spam class="time"></spam>
+      </li>
+      <li data-time="3:10">
+        <img src="https://source.unsplash.com/random?sig=30" />
+        Video 30 <spam class="time"></spam>
+      </li>
+      <li data-time="4:43">
+        <img src="https://source.unsplash.com/random?sig=1231" />
+        Video 31 <spam class="time"></spam>
+      </li>
+      <li data-time="19:43">
+        <img src="https://source.unsplash.com/random?sig=1232" />
+        Video 32 <spam class="time"></spam>
+      </li>
+      <li data-time="0:47">
+        <img src="https://source.unsplash.com/random?sig=1233" />
+        Video 33 <spam class="time"></spam>
+      </li>
+      <li data-time="0:47">
+        <img src="https://source.unsplash.com/random?sig=1234" />
+        Video 34 <spam class="time"></spam>
+      </li>
+      <li data-time="3:14">
+        <img src="https://source.unsplash.com/random?sig=1235" />
+        Video 35 <spam class="time"></spam>
+      </li>
+      <li data-time="3:59">
+        <img src="https://source.unsplash.com/random?sig=1236" />
+        Video 36 <spam class="time"></spam>
+      </li>
+      <li data-time="2:43">
+        <img src="https://source.unsplash.com/random?sig=1237" />
+        Video 37 <spam class="time"></spam>
+      </li>
+      <li data-time="4:17">
+        <img src="https://source.unsplash.com/random?sig=1238" />
+        Video 38 <spam class="time"></spam>
+      </li>
+      <li data-time="6:56">
+        <img src="https://source.unsplash.com/random?sig=1239" />
+        Video 39 <spam class="time"></spam>
+      </li>
+      <li data-time="3:05">
+        <img src="https://source.unsplash.com/random?sig=12310" />
+        Video 40 <spam class="time"></spam>
+      </li>
+      <li data-time="2:06">
+        <img src="https://source.unsplash.com/random?sig=12311" />
+        Video 41 <spam class="time"></spam>
+      </li>
+      <li data-time="1:59">
+        <img src="https://source.unsplash.com/random?sig=12312" />
+        Video 42 <spam class="time"></spam>
+      </li>
+      <li data-time="1:49">
+        <img src="https://source.unsplash.com/random?sig=12313" />
+        Video 43 <spam class="time"></spam>
+      </li>
+      <li data-time="3:36">
+        <img src="https://source.unsplash.com/random?sig=12314" />
+        Video 44 <spam class="time"></spam>
+      </li>
+      <li data-time="7:10">
+        <img src="https://source.unsplash.com/random?sig=12315" />
+        Video 45 <spam class="time"></spam>
+      </li>
+      <li data-time="3:44">
+        <img src="https://source.unsplash.com/random?sig=12316" />
+        Video 46 <spam class="time"></spam>
+      </li>
+      <li data-time="3:44">
+        <img src="https://source.unsplash.com/random?sig=12317" />
+        Video 47 <spam class="time"></spam>
+      </li>
+      <li data-time="4:36">
+        <img src="https://source.unsplash.com/random?sig=12318" />
+        Video 48 <spam class="time"></spam>
+      </li>
+      <li data-time="3:16">
+        <img src="https://source.unsplash.com/random?sig=12319" />
+        Video 49 <spam class="time"></spam>
+      </li>
+      <li data-time="1:10">
+        <img src="https://source.unsplash.com/random?sig=12329" />
+        Video 50 <spam class="time"></spam>
+      </li>
+      <li data-time="6:10">
+        <img src="https://source.unsplash.com/random?sig=12330" />
+        Video 51 <spam class="time"></spam>
+      </li>
+      <li data-time="2:14">
+        <img src="https://source.unsplash.com/random?sig=12331" />
+        Video 52 <spam class="time"></spam>
+      </li>
+      <li data-time="3:44">
+        <img src="https://source.unsplash.com/random?sig=12332" />
+        Video 53 <spam class="time"></spam>
+      </li>
+      <li data-time="5:05">
+        <img src="https://source.unsplash.com/random?sig=12333" />
+        Video 54 <spam class="time"></spam>
+      </li>
+      <li data-time="6:03">
+        <img src="https://source.unsplash.com/random?sig=12334" />
+        Video 55 <spam class="time"></spam>
+      </li>
+      <li data-time="12:39">
+        <img src="https://source.unsplash.com/random?sig=12335" />
+        Video 56 <spam class="time"></spam>
+      </li>
+      <li data-time="1:56">
+        <img src="https://source.unsplash.com/random?sig=12336" />
+        Video 57 <spam class="time"></spam>
+      </li>
+      <li data-time="4:04">
+        <img src="https://source.unsplash.com/random?sig=12337" />
+        Video 58 <spam class="time"></spam>
+      </li>
+    </ul>
+    <script src="./reduce.js"></script>
+  </body>
+</html>
