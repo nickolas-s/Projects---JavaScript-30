@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack A Mole!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button class="start-btn">Start!</button>
+      <p class="timer-text">Time: <span class="timer">0:00</span></p>
+      <p class="highest-text">Highest Score: <span class="highest">00</span></p>
+    </header>
+
+    <h1>Whack-a-mole! <span class="score">0</span></h1>
+
+    <div class="game">
+      <div class="hole hole1">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6">
+        <div class="mole"></div>
+      </div>
+    </div>
+
+    <audio class="bang-sound" src="./sounds/Sharp-Punch.wav"></audio>
+    <audio class="mole-sound" src="./sounds/Woosh.wav"></audio>
+    <audio class="start-sound" src="./sounds/Boxing-Mma.wav"></audio>
+    <audio class="end-sound" src="./sounds/Bike-Horn.wav"></audio>
+    <script src="./game.js"></script>
+  </body>
+</html>
