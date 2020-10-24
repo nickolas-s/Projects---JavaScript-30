@@ -17,3 +17,11 @@ const min = Math.floor(secondsLeft / 60);
 secondsLeft %= 60;
 
 console.log(`${hours}h, ${min}min, ${secondsLeft}sec`);
+
+// To Display Time
+const timeDisplay = document.querySelectorAll('.time');
+const times = timeNodes.map(node => node.dataset.time);
+
+timeDisplay.forEach((display, index) => {
+  display.textContent = times[index];
+});
